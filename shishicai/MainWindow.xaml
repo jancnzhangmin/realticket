@@ -1,0 +1,45 @@
+﻿<Window x:Class="shishicai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" />
+        <ToolBar Grid.Row="1"/>
+        <avalonDock:DockingManager x:Name="dockingManager" Grid.Row="2" >
+            <avalonDock:DockingManager.Theme>
+                <avalonDock:AeroTheme/>
+            </avalonDock:DockingManager.Theme>
+                <avalonDock:LayoutRoot>
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <avalonDock:LayoutAnchorablePaneGroup DockWidth="300" Orientation="Vertical">
+                        <avalonDock:LayoutAnchorablePane>
+                            <avalonDock:LayoutAnchorable Title="开奖号码" CanClose="False" CanHide="False" x:Name="leftpanel">
+                            </avalonDock:LayoutAnchorable>
+
+                        </avalonDock:LayoutAnchorablePane>
+
+                    </avalonDock:LayoutAnchorablePaneGroup>
+                    <avalonDock:LayoutDocumentPaneGroup>
+                        <avalonDock:LayoutDocumentPane x:Name="avapane">
+
+                        </avalonDock:LayoutDocumentPane>
+                    </avalonDock:LayoutDocumentPaneGroup>
+<avalonDock:LayoutAnchorablePaneGroup DockWidth="400" Orientation="Vertical">
+                        <avalonDock:LayoutAnchorablePane >
+                            <avalonDock:LayoutAnchorable Title="Tool 1" x:Name="rightpanel">
+                                <StackPanel x:Name="rightstack"></StackPanel>
+                            </avalonDock:LayoutAnchorable>
+                        </avalonDock:LayoutAnchorablePane>
+                    </avalonDock:LayoutAnchorablePaneGroup>
+                </avalonDock:LayoutPanel>
+
+            </avalonDock:LayoutRoot>
+        </avalonDock:DockingManager>
+    </Grid>
+</Window>
