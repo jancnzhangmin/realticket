@@ -27,8 +27,8 @@ namespace shishicai
         public void createlab(int dan_shuang,int dou)
         {
             Rectangle rect = new Rectangle();
-            rect.Width = 37;
-            rect.Height = 37;
+            rect.Width = 27;
+            rect.Height = 27;
             if (dan_shuang == 1)
             {
                 rect.Fill = Brushes.DodgerBlue;
@@ -43,7 +43,7 @@ namespace shishicai
             Label dslab = new Label();
             dslab.Foreground = Brushes.White;
             //dslab.FontWeight = FontWeights.Bold;
-            dslab.FontSize = 18;
+            dslab.FontSize = 14;
             if (dan_shuang == 1)
             {
                 dslab.Content = "单";
@@ -58,9 +58,9 @@ namespace shishicai
             {
                 Label doulab = new Label();
                 doulab.Foreground = Brushes.White;
-                doulab.Content = dou+"对";
-                doulab.FontSize = 14;
-                doulab.Margin = new Thickness(12, 18, 0, 0);
+                doulab.Content = dou;
+                doulab.FontSize = 12;
+                doulab.Margin = new Thickness(14, 8, 0, 0);
                 maincanvas.Children.Add(doulab);
             }
         }

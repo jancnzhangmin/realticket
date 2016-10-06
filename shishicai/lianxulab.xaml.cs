@@ -27,8 +27,8 @@ namespace shishicai
         public void create_ell(int type)//生成图
         {
             Ellipse ell = new Ellipse();
-            ell.Width = 36;
-            ell.Height = 36;
+            ell.Width = 26;
+            ell.Height = 26;
             if (type == 0)
             {
                 ell.Stroke = Brushes.OrangeRed;
@@ -46,7 +46,7 @@ namespace shishicai
                     Label duilab = new Label();
                     duilab.Content = "对";
                     duilab.Foreground = Brushes.OrangeRed;
-                    duilab.Margin = new Thickness(10, 8, 0, 0);
+                    duilab.Margin = new Thickness(4, 3, 0, 0);
                     lianxucanvas.Children.Add(duilab);
                 }
                 else
@@ -55,7 +55,7 @@ namespace shishicai
                     Label duilab = new Label();
                     duilab.Content = "对";
                     duilab.Foreground = Brushes.DodgerBlue;
-                    duilab.Margin = new Thickness(10, 8, 0, 0);
+                    duilab.Margin = new Thickness(4, 3, 0, 0);
                     lianxucanvas.Children.Add(duilab);
                 }
 
@@ -63,9 +63,9 @@ namespace shishicai
 
                 
             }
-            ell.StrokeThickness = 6;
+            ell.StrokeThickness = 4;
             ell.SnapsToDevicePixels = true;
-            ell.Margin = new Thickness(3, 3, 0, 0);
+            ell.Margin = new Thickness(2, 2, 0, 0);
             lianxucanvas.Children.Add(ell);
         }
     }

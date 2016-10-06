@@ -202,7 +202,7 @@ namespace shishicai
              if (newtrem != null)
              {
                  //newtrem.tr
-                 newtrem.cul_list(nowdate.ToLongDateString(),"cq");
+                 newtrem.cul_list(DateTime.Now.ToLongDateString(),"cq");
              }
              modify_last_update_time();
              timer.Start();

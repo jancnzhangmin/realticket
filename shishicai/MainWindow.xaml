@@ -12,14 +12,14 @@
         <Menu Grid.Row="0" />
         <ToolBar Grid.Row="1"/>
         <avalonDock:DockingManager x:Name="dockingManager" Grid.Row="2" >
-            <avalonDock:DockingManager.Theme>
+            <!--<avalonDock:DockingManager.Theme>
                 <avalonDock:AeroTheme/>
-            </avalonDock:DockingManager.Theme>
+            </avalonDock:DockingManager.Theme>-->
                 <avalonDock:LayoutRoot>
                 <avalonDock:LayoutPanel Orientation="Horizontal">
                     <avalonDock:LayoutAnchorablePaneGroup DockWidth="300" Orientation="Vertical">
                         <avalonDock:LayoutAnchorablePane>
-                            <avalonDock:LayoutAnchorable Title="开奖号码" CanClose="False" CanHide="False" x:Name="leftpanel">
+                            <avalonDock:LayoutAnchorable Title="开奖号码" CanClose="False" CanHide="False" x:Name="leftpanel" CanFloat="False" AutoHideMinWidth="300">
                             </avalonDock:LayoutAnchorable>
 
                         </avalonDock:LayoutAnchorablePane>
@@ -32,7 +32,7 @@
                     </avalonDock:LayoutDocumentPaneGroup>
 <avalonDock:LayoutAnchorablePaneGroup DockWidth="400" Orientation="Vertical">
                         <avalonDock:LayoutAnchorablePane >
-                            <avalonDock:LayoutAnchorable Title="Tool 1" x:Name="rightpanel">
+                            <avalonDock:LayoutAnchorable Title="Tool 1" x:Name="rightpanel" CanFloat="False" CanHide="False" AutoHideMinWidth="400">
                                 <StackPanel x:Name="rightstack"></StackPanel>
                             </avalonDock:LayoutAnchorable>
                         </avalonDock:LayoutAnchorablePane>

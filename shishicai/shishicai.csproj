@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -78,12 +79,18 @@
     <Compile Include="lianxulab.xaml.cs">
       <DependentUpon>lianxulab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="longhu.xaml.cs">
+      <DependentUpon>longhu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PublicClass.cs" />
     <Compile Include="rightlianxu.xaml.cs">
       <DependentUpon>rightlianxu.xaml</DependentUpon>
     </Compile>
     <Compile Include="smalllianxu.xaml.cs">
       <DependentUpon>smalllianxu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sub_chongqing.xaml.cs">
+      <DependentUpon>sub_chongqing.xaml</DependentUpon>
     </Compile>
     <Compile Include="tremlist.xaml.cs">
       <DependentUpon>tremlist.xaml</DependentUpon>
@@ -107,6 +114,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="longhu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="smalllianxu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sub_chongqing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
